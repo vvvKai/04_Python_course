@@ -28,6 +28,8 @@
 #     (4, {'название': 'мышка', 'цена': 500, 'количество': 17, 'eд': 'литров.'}),
 # ]
 
+# мышка 453 17 литров
+
 goods = []
 i = 0
 
@@ -57,6 +59,7 @@ for el in goods_dict:
         if key_val not in dict_list:
             dict_list.append(key_val)
     goods_dict[el] = dict_list
-    print(goods_dict)
+
+print(goods_dict)
 
 
