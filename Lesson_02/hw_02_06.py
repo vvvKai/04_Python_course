@@ -21,10 +21,12 @@
 #     “ед”: [“шт.”]
 # }
 
-# ноутбук 75000 5 шт
-# телефон 20000 10 шт
-# клавиатура 1000 17 шт
-# флешка 500 20 шт
+# goods = [
+#     (1, {'название': 'компьютер', 'цена': 20000, 'количество': 5, 'eд': 'шт.'}),
+#     (2, {'название': 'принтер', 'цена': 6000, 'количество': 2, 'eд': 'шт.'}),
+#     (3, {'название': 'сканер', 'цена': 2000, 'количество': 7, 'eд': 'шт.'}),
+#     (4, {'название': 'мышка', 'цена': 500, 'количество': 17, 'eд': 'литров.'}),
+# ]
 
 goods = []
 i = 0
@@ -43,17 +45,18 @@ while True:
                       'Количество': good_list[2],
                       'Ед. изм.': good_list[3]}))
 
-result_dict = {}
+goods_dict = {}
 
-for i, el in enumerate(list(goods[0][1].keys())):
-    result_dict[el] = []
+for el in list(goods[0][1].keys()):
+    goods_dict[el] = []
 
-for i, el in enumerate(result_dict):
+for el in goods_dict:
     dict_list = []
-    for j, el_goods in enumerate(goods):
-        key = el_goods[1].get(el)
-        if key not in dict_list:
-            dict_list.append(key)
-    result_dict[el] = dict_list
+    for el_goods in goods:
+        key_val = el_goods[1].get(el)
+        if key_val not in dict_list:
+            dict_list.append(key_val)
+    goods_dict[el] = dict_list
+    print(goods_dict)
 
-print(result_dict)
+
