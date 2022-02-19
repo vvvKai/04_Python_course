@@ -5,16 +5,18 @@
 
 
 numbers = []
+i = 0
 
-list_n = int(input('Ведите количество элементов списка: '))
-
-for el in range(list_n):
-    el_n = int(input(f'Введите {el + 1}-й элемент списка: '))
+while True:
+    i += 1
+    el_n = input(f'Введите {i}-й элемент списка: ')
+    if el_n == '':
+        break
     numbers.append(el_n)
 
-print('Исходный список: ', numbers)
-
 i = 0
+
+print('Исходный список: ', numbers)
 
 while i < len(numbers):
     pop_el = numbers.pop(i)
