@@ -1,0 +1,103 @@
+Index: Lesson_02/main_02.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Lesson_02/main_02.py	(revision 732477bc8764a9eb28d1305ccc610fdb6fcc8c98)
++++ Lesson_02/main_02.py	(date 1645115205985)
+@@ -1,0 +1,95 @@
++"""
++my_str = "простая строка"
++print(my_str)
++print(type(my_str))
++
++# Конкатенация (сцепление)
++s1 = 'abra'
++s2 = 'kadabra'
++print(s1 + s2)
++
++# Взятие элемента по индексу
++s = 'abrakadabra'
++print(s[1])
++
++# Извлечение среза
++# Синтаксис: [s:f:step], где s — начало среза, f — окончание, step — шаг (опционально).
++
++s = 'abrakadabra'
++print(s[4:7])
++print(s[3:-3])
++print(s[:5])
++print(s[3:])
++print(s[:])
++print(s[::-1])
++print(s[1:7:2])
++
++# Механизмы реверса строк
++# 1.	Срез.
++string = "abrakadbra"
++str_reverse = string[::-1]
++print(str_reverse)
++
++# 2.	Обратная итерация.
++for el in reversed("abrakadbra"):
++    print(el)
++
++for el in "abrakadbra":
++    print(el)
++
++# 3.	Реверс на месте.
++string = "abrakadabra"
++str_reverse = ''
++symbols = list(string)
++for el in range(len(string) // 2):
++    tmp = symbols[el]
++    symbols[el] = symbols[len(string) - el - 1]
++    symbols[len(string) - el - 1] = tmp
++str_reverse = ''.join(symbols)
++print(str_reverse)
++
++print('простая строка'.upper())
++
++print('Ехал Грека Через Реку'.istitle())
++print('Ехал Грека Через реку'.istitle())
++
++print('рарара'.count('ра', 1, 4))
++
++
++
++perem_1 = set('abrakadabra')
++perem_2 = frozenset('abrakadabra')
++print(perem_1)
++print(perem_2)
++perem_1.add('!')
++print(perem_1)
++
++
++
++my_dict = {"key_1": 500, 2: 400, "key_3": True, 4: None}
++
++# setdefault
++print(my_dict.setdefault(5))
++print(my_dict.items())
++
++my_dict = {"key_1": 500, 2: 400, "key_3": True, 4: None}
++
++# update
++my_dict.update({8: 8, 9: 9, 10: 10})
++print(my_dict.items())
++
++func_return = None
++message = func_return or "Функция ничего не возвращает"
++print(message)
++
++obj_1 = [10, 20, 30, 40]
++obj_2 = obj_1
++print(obj_1 == obj_2)
++print(obj_1 is obj_2)
++"""
++
++
++my_dict = {'k_1': 20, 'k_2': True, 'k_3': 'text'}
++print(my_dict['k_4'])
++
++

@@ -1,0 +1,22 @@
+diff --git Les_01/HomeWork_01/.gitignore Les_01/HomeWork_01/.gitignore
+deleted file mode 100644
+diff --git Les_01/HomeWork_01/README.md Les_01/HomeWork_01/README.md
+deleted file mode 100644
+diff --git Les_01/HomeWork_01/Home_work_06.py Les_01/Home_work_06.py
+rename from Les_01/HomeWork_01/Home_work_06.py
+rename to Les_01/Home_work_06.py
+diff --git Les_01/HomeWork_01/Home_work_05.py Les_01/Home_work_05.py
+rename from Les_01/HomeWork_01/Home_work_05.py
+rename to Les_01/Home_work_05.py
+diff --git Les_01/HomeWork_01/Home_work_04.py Les_01/Home_work_04.py
+rename from Les_01/HomeWork_01/Home_work_04.py
+rename to Les_01/Home_work_04.py
+diff --git Les_01/HomeWork_01/Home_work_03.py Les_01/Home_work_03.py
+rename from Les_01/HomeWork_01/Home_work_03.py
+rename to Les_01/Home_work_03.py
+diff --git Les_01/HomeWork_01/Home_work_02.py Les_01/Home_work_02.py
+rename from Les_01/HomeWork_01/Home_work_02.py
+rename to Les_01/Home_work_02.py
+diff --git Les_01/HomeWork_01/Home_work_01.py Les_01/Home_work_01.py
+rename from Les_01/HomeWork_01/Home_work_01.py
+rename to Les_01/Home_work_01.py
