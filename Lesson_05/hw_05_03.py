@@ -23,13 +23,13 @@ with open('task_03_file.txt') as import_list:
     sum_salary = 0
     i = 0
     for key in new_dict:
-        if int(new_dict.get(key)) > max_salary:
-            max_salary = int(new_dict.get(key))
+        if float(new_dict.get(key)) > max_salary:
+            max_salary = float(new_dict.get(key))
             name_max_salary = key
-        if int(new_dict.get(key)) <= min_salary:
+        if float(new_dict.get(key)) <= min_salary:
             i += 1
             low_salary.append(f'{key}: {new_dict.get(key)}')
-        sum_salary += int(new_dict.get(key))
+        sum_salary += float(new_dict.get(key))
 
     print(f'Наибольшая ЗП у {name_max_salary} = {max_salary}')
     print(f'Сотрудников с ЗП меньше 20000 рублей - {i} человек: ', low_salary)

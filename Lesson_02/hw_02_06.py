@@ -61,5 +61,3 @@ for el in goods_dict:
     goods_dict[el] = dict_list
 
 print(goods_dict)
-
-

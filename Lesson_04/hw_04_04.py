@@ -24,4 +24,3 @@ for x in my_dict:
         uniq_list.append(x)
 
 print(uniq_list)
-

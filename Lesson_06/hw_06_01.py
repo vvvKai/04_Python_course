@@ -11,8 +11,8 @@
 
 import time
 
-class TrafficLight():
 
+class TrafficLight:
     red_color = 'Красный'
     orange_color = 'Желтый'
     green_color = 'Зеленый'
@@ -49,6 +49,7 @@ class TrafficLight():
             print("ВВЕДЕН НЕВЕРНЫЙ АРГУМЕНТ")
 
         print('Цикл переключения цветов завершен')
+
 
 a = TrafficLight()
 a.running()

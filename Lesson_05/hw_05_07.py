@@ -14,6 +14,7 @@
 # Подсказка: использовать менеджер контекста.
 import json
 
+
 with open('task_07_file.txt', 'r') as firm_list:
     average_profit = 0
     i = 0

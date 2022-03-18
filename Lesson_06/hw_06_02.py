@@ -11,13 +11,17 @@
 
 class Road():
     __mass_1sqr = 0.025
+
     def __init__(self, length=1, width=1):
         self._length = length
         self._width = width
         print(f'Создан новый объект класса Road длиной {self._length} метров и шириной {self._width} метров')
-    def calc_mass (self, height=1):
-        self.height = height/100
-        return print(f'Масса асфальта дороги длиной={self._length} м., шириной={self._width} м., плотностью={self.__mass_1sqr} тн./кв.м и толщиной {height} см. = {int(self._length*self._width*self.__mass_1sqr*self.height)} тн.')
+
+    def calc_mass(self, height=1):
+        self.height = height / 100
+        return print(
+            f'Масса асфальта дороги длиной={self._length} м., шириной={self._width} м., плотностью={self.__mass_1sqr} тн./кв.м и толщиной {height} см. = {int(self._length * self._width * self.__mass_1sqr * self.height)} тн.')
+
 
 a = Road(5000, 20)
 a.calc_mass(5)

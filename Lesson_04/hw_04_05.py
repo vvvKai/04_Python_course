@@ -5,6 +5,7 @@
 
 from functools import reduce
 
-numbers = [el for el in range(100,1001) if el%2 == 0]
+
+numbers = [el for el in range(100, 1001) if el % 2 == 0]
 sum_numbers = reduce(lambda x, y: x * y, numbers)
 print(sum_numbers)

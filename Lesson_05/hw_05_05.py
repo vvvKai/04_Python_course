@@ -3,6 +3,7 @@
 
 from random import randint
 
+
 with open('task_05_file.txt', 'w', encoding="UTF-8") as num_file:
     n = 10
     numbers = [randint(1, 100) for el in range(n)]

@@ -5,7 +5,6 @@
 from hw_04_01_script import salary_calc
 from sys import argv
 
-
 script_name, hours, hour_rate, prize = argv
 
 print("Имя скрипта: ", script_name)

@@ -15,4 +15,5 @@ def int_func(text):
         print('Строка/слово должны состоять из букв нижнего регистра.')
         return ''
 
+
 print(int_func('text one two three'))

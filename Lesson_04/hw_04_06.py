@@ -11,6 +11,7 @@
 from itertools import count, cycle
 from random import random
 
+
 # итератор, генерирующий целые числа, начиная с указанного
 start_num = 3
 stop_num = 10
@@ -21,7 +22,6 @@ for el in count(start_num):
         break
 print(gen_1)
 
-
 # итератор, повторяющий элементы некоторого списка, определённого заранее.
 list_cities = ['Moscow', 'London', 'New York', 'Paris']
 for el in cycle(list_cities):
@@ -29,5 +29,3 @@ for el in cycle(list_cities):
         break
     print(el)
     start_num += 1
-
-

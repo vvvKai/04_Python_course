@@ -33,7 +33,8 @@ person_list = [person_1, person_2, person_3]
 
 for el in person_list:
     print('Проверяем значения переданных атрубтов:')
-    print(f'Имя - {el.name} \nФамилия - {el.surname} \nДолжность - {el.position} \nОклад - {el.wage} руб. \nБонус - {el.bonus} руб.')
+    print(
+        f'Имя - {el.name} \nФамилия - {el.surname} \nДолжность - {el.position} \nОклад - {el.wage} руб. \nБонус - {el.bonus} руб.')
     print('Проверяем методы экземляра класса:')
     el.get_full_name()
     el.get_total_income()
